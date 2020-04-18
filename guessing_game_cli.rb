@@ -14,7 +14,6 @@ def num_generator
 end
 
 def run_guessing_game
-  greet
   guess = prompt
   number = num_generator
 
@@ -25,4 +24,4 @@ def run_guessing_game
   else
     "Sorry! The computer guessed #{number}"
   end
-end 
+end
