@@ -18,9 +18,20 @@ def run_guessing_game
   guess = prompt
   number = num_generator
 
+  case guess 
+when 'exit' 
+  puts "Goodbye!" 
+when number   
+  puts "You guessed the correct number!"
+  
+
+
+
   if guess.to_s == 'exit'
     puts "Goodbye!"
-  elsif guess.to_i == number
+  elsif guess == number
     puts "You guessed the correct number!"
-  elsif guess.to_i != number
-    "Sorry! The computer guessed #{number}"
+  else
+    "Sorry! The computer guessed #{number}" 
+  end 
+    
