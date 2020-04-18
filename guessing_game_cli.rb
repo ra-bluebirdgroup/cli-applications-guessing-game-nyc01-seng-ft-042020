@@ -17,12 +17,12 @@ def run_guessing_game
   guess = prompt
   number = num_generator
 
-  if guess == number
+  if guess.to_i == number
     puts "You guessed the correct number!"
   elsif guess == 'exit'
       puts "Goodbye!"
   else
     puts "Sorry! The computer guessed #{number}"
   end
-  
+
 end
