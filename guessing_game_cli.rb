@@ -1,4 +1,3 @@
-# Code your solution here!
 def greet
   puts "Hello!"
     puts "Enter an number to guess the number, or (exit) to end game."
